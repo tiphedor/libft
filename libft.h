@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:00:07 by msteffen          #+#    #+#             */
-/*   Updated: 2017/11/28 17:33:46 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/01 18:20:21 by tiphedor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,11 +86,9 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char const *s, int fd);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
-void			ft_putstrstr_fd(char **str, int len, int fd);
 
 void			ft_putchar(char c);
 void			ft_putstr(char const *s);
-void			ft_putstrstr(char **str, int len);
 void			ft_putendl(char const *s);
 void			ft_putnbr(int n);
 
