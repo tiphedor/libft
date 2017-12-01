@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:00:07 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/01 18:30:47 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/01 18:32:12 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,13 +68,14 @@ char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int				ft_strequ(char const *s1, char const *s2);
 int				ft_strnequ(char const *s1, char const *s2, size_t n);
 char			*ft_strjoin(char const *s1, char const *s2);
+char			*ft_strnjoin(char const *s1, char const *s2, size_t n);
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
 char			*ft_strtrim(char const *s);
 
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strncpy(char *dst, const char *src, size_t len);
 char			*ft_strcat(char *s1, const char *s2);
-char			*ft_strncat(char *dest, char *src, size_t nb);
+char			*ft_strncat(char *dest, const char *src, size_t nb);
 size_t			ft_strlcat(char *dest, const char *src, size_t size);
 
 char			*ft_strstr(const char *haystack, const char *needle);
