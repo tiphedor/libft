@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:00:07 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/01 18:47:35 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/01 19:01:32 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ void			*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void			*ft_memchr(const void *s, int c, size_t n);
 void			*ft_memalloc(size_t size);
 void			*ft_memzalloc(size_t size);
-void			*ft_memrealloc(void **ptr, size_t old_size, size_t new_size);
 void			ft_memdel(void **ap);
 
 int				ft_atoi(const char *str);
