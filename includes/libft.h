@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:00:07 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/01 19:01:32 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/01 19:21:21 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,5 +105,10 @@ void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+int				ft_int_min(int *arr, unsigned int len);
+int				ft_int_max(int *arr, unsigned int len);
+void			ft_int_sort(int *arr, unsigned int len);
+float			ft_int_average(int *arr, unsigned int len);
 
 #endif
