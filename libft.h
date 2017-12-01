@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:00:07 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/01 22:49:00 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/01 23:01:07 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ char			*ft_strnjoin(char const *s1, char const *s2, size_t n);
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
 char			*ft_strtrim(char const *s);
 
-char			*ft_strcapitalize(const char *src);
+char			*ft_strtoupper(const char *src);
 char			*ft_strtolower(const char *src);
 
 char			*ft_strcpy(char *dst, const char *src);
