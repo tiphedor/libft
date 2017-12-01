@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 16:03:30 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/01 18:33:47 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/01 22:37:06 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,8 @@ char	*ft_strncat(char *dest, const char *src, size_t nb)
 	unsigned int i;
 	unsigned int y;
 
-	i = 0;
 	y = 0;
-	while (dest[i])
-		i++;
+	i = ft_strlen(dest);
 	while (src[y] && y < nb)
 	{
 		dest[i] = src[y];

@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 12:02:44 by msteffen          #+#    #+#             */
-/*   Updated: 2017/11/08 16:53:03 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/01 22:29:56 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 char	*ft_strnew(size_t size)
 {
-	char *str;
-
-	str = (char *)ft_memalloc(size + 1);
-	return (str);
+	return ((char *)ft_memalloc(size + 1));
 }

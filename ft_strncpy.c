@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 15:56:02 by msteffen          #+#    #+#             */
-/*   Updated: 2017/11/08 16:35:05 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/01 22:32:48 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,6 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 		i++;
 	}
 	while (i < len && dst[i])
-	{
-		dst[i] = 0;
-		i++;
-	}
+		dst[i++] = 0;
 	return (dst);
 }
