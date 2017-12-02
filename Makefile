@@ -6,7 +6,7 @@
 #    By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/06 15:28:13 by msteffen          #+#    #+#              #
-#    Updated: 2017/12/01 23:08:03 by msteffen         ###   ########.fr        #
+#    Updated: 2017/12/02 11:47:21 by msteffen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,5 +36,7 @@ clean:
 fclean: clean
 	rm -rf $(NAME)
 re: fclean all
-
-.PHONY: all clean fclean re
+install: all
+	/bin/cp -rf includes/libft.h /usr/local/include
+	/bin/cp -rf libft.a /usr/local/lib
+.PHONY: all clean fclean re install
