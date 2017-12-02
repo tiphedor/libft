@@ -13,6 +13,10 @@ Compile with :
 
     cc -I path-to-libft/includes -L path-to-libft -lft <...>
 
-Or, copy libft.a and includes/libft.h into your system's libs folder, and then only use :
+Or, alternatively, run : 
+
+    sudo make install
+    
+To copy the header and lib file into /usr/local. Then compile with :
 
     cc -lft <...>
