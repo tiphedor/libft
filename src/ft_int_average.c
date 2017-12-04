@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/01 19:11:49 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/01 19:20:34 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/04 17:00:27 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 float	ft_int_average(int *arr, unsigned int len)
 {
-	unsigned int i;
-	float avg;
+	unsigned int	i;
+	float			avg;
 
 	i = 0;
 	avg = 0;

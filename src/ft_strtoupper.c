@@ -6,13 +6,13 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/01 18:35:24 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/01 23:00:54 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/04 17:01:01 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtoupper(const char *src)
+char	*ft_strtoupper(const char *src)
 {
 	char			*str;
 	unsigned int	i;
