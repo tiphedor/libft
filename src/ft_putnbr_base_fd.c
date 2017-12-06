@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 13:48:58 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/06 19:34:15 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/06 19:38:35 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ int	ft_putnbr_base_fd(int fd, int nbr, char *base)
 	base_size = ft_strlen(base);
 	if (nbr == 0)
 	{
-		ft_putchar_fd('\n', fd);
+		ft_putchar_fd('0', fd);
 		return (1);
 	}
 	if (base_size <= 1)
