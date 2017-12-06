@@ -6,19 +6,23 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 13:48:58 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/06 13:52:58 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/06 19:28:18 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_putnbr_recurs(int nbr, char *base, int base_length, int fd)
+static int ft_putnbr_recurs(int nbr, char *base, int base_length, int fd)
 {
+	int len;
+
 	if (nbr != 0)
 	{
-		ft_putnbr_recurs(nbr / base_length, base, base_length, fd);
+		len = 1 + ft_putnbr_recurs(nbr / base_length, base, base_length, fd);
 		ft_putchar_fd(base[nbr % base_length], fd);
+		return (len);
 	}
+	return (0);
 }
 
 static int		base_check(char *base)
@@ -43,7 +47,7 @@ static int		base_check(char *base)
 	return (1);
 }
 
-void	ft_putnbr_base_fd(int fd, int nbr, char *base)
+int	ft_putnbr_base_fd(int fd, int nbr, char *base)
 {
 	int		base_size;
 	long	nb;
@@ -51,13 +55,13 @@ void	ft_putnbr_base_fd(int fd, int nbr, char *base)
 	nb = nbr;
 	base_size = ft_strlen(base);
 	if (base_size <= 1)
-		return ;
+		return (-1);
 	if (!base_check(base))
-		return ;
+		return (-1);
 	if (nb < 0)
 	{
 		ft_putchar_fd('-', fd);
 		nb *= -1;
 	}
-	ft_putnbr_recurs(nb, base, base_size, fd);
+	return(ft_putnbr_recurs(nb, base, base_size, fd));
 }
