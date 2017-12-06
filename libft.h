@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:00:07 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/01 23:01:07 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/06 13:00:44 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int				ft_isprint(int c);
 int				ft_isspace(int c);
 int				ft_tolower(int c);
 int				ft_intlen(unsigned int n);
+
+int				ft_isoneof(char c, const char *str);
 
 void			ft_bzero(void *s, size_t n);
 void			*ft_memset(void *b, int c, size_t len);
