@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putunbr_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putnchar_fd.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/06 14:37:50 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/06 14:39:26 by msteffen         ###   ########.fr       */
+/*   Created: 2017/12/07 18:38:21 by msteffen          #+#    #+#             */
+/*   Updated: 2017/12/07 18:46:29 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
-void ft_putunbr_fd(unsigned int n, int fd)
+void	ft_putnchar_fd(int fd, int n, char c)
 {
-	if (n < 9)
-		ft_putchar_fd(n + '0', fd);
-	else
+	int i;
+
+	i = 0;
+	while (i < n)
 	{
-		ft_putunbr_fd(n / 10, fd);
-		ft_putchar_fd((n % 10) + '0', fd);
+		write(fd, &c, 1);
+		i++;
 	}
 }

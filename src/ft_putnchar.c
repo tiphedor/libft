@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putunbr.c                                       :+:      :+:    :+:   */
+/*   ft_putnchar.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/06 14:37:37 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/06 14:39:21 by msteffen         ###   ########.fr       */
+/*   Created: 2017/12/07 18:37:22 by msteffen          #+#    #+#             */
+/*   Updated: 2017/12/07 18:38:18 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 
-void ft_putunbr(unsigned int n)
+void	ft_putnchar(int n, char c)
 {
-	ft_putunbr_fd(n, STDOUT_FILENO);
+	ft_putnchar_fd(STDOUT_FILENO, n, c);
 }
