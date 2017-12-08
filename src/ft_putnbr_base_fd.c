@@ -6,13 +6,13 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 13:48:58 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/06 19:38:35 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/08 17:12:43 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int ft_putnbr_recurs(int nbr, char *base, int base_length, int fd)
+static int	ft_putnbr_recurs(int nbr, char *base, int base_length, int fd)
 {
 	int len;
 
@@ -25,7 +25,7 @@ static int ft_putnbr_recurs(int nbr, char *base, int base_length, int fd)
 	return (0);
 }
 
-static int		base_check(char *base)
+static int	base_check(char *base)
 {
 	int i;
 	int y;
@@ -47,7 +47,7 @@ static int		base_check(char *base)
 	return (1);
 }
 
-int	ft_putnbr_base_fd(int fd, int nbr, char *base)
+int			ft_putnbr_base_fd(int fd, int nbr, char *base)
 {
 	int		base_size;
 	long	nb;
@@ -65,5 +65,5 @@ int	ft_putnbr_base_fd(int fd, int nbr, char *base)
 		return (-1);
 	if (nb < 0)
 		return (-1);
-	return(ft_putnbr_recurs(nb, base, base_size, fd));
+	return (ft_putnbr_recurs(nb, base, base_size, fd));
 }
