@@ -6,13 +6,13 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 11:17:58 by msteffen          #+#    #+#             */
-/*   Updated: 2017/11/08 13:14:29 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/08 18:10:16 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+int	ft_putnbr_fd(int n, int fd)
 {
 	unsigned int nb;
 
@@ -29,4 +29,5 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(nb / 10, fd);
 		ft_putchar_fd((nb % 10) + '0', fd);
 	}
+	return (ft_intlen(n));
 }
