@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:00:07 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/08 18:08:00 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/12 14:02:08 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,7 @@ char			*ft_strrchr(const char *s, int c);
 int				ft_putchar_fd(char c, int fd);
 int				ft_putnchar_fd(int fd, int n, char c);
 int				ft_putstr_fd(char const *s, int fd);
+int				ft_putnstr_fd(int n, char const *s, int fd);
 int				ft_putendl_fd(char const *s, int fd);
 int				ft_putnbr_fd(int n, int fd);
 int				ft_putnbr_base_fd(int fd, int nbr, char *base);
@@ -98,6 +99,7 @@ int				ft_putnbr_base(int nbr, char *base);
 int				ft_putnchar(int n, char c);
 int				ft_putchar(char c);
 int				ft_putstr(char const *s);
+int				ft_putnstr(int n, char const *s);
 int				ft_putendl(char const *s);
 int				ft_putnbr(int n);
 
