@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 13:59:31 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/12 14:01:25 by msteffen         ###   ########.fr       */
+/*   Updated: 2017/12/12 14:31:37 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,13 @@ int	ft_putnstr_fd(int n, char const *s, int fd)
 {
 	int i;
 
-	i = -1;
-	if (!s)
+	i = 0;
+	if (!s || n <= 0)
 		return (0);
-	while (i < (n - 1) && s[++i])
+	while (i < n && s[i])
+	{
 		ft_putchar_fd(s[i], fd);
+		i++;
+	}
 	return (i);
 }
