@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:00:07 by msteffen          #+#    #+#             */
-/*   Updated: 2017/12/12 14:02:08 by msteffen         ###   ########.fr       */
+/*   Updated: 2018/01/17 18:25:08 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 # define FT_LIBFT 1
 # define FT_VERSION 1
+# define BUFF_SIZE 60
 
 typedef struct	s_list
 {
@@ -117,5 +118,7 @@ int				ft_int_min(int *arr, unsigned int len);
 int				ft_int_max(int *arr, unsigned int len);
 void			ft_int_sort(int *arr, unsigned int len);
 float			ft_int_average(int *arr, unsigned int len);
+
+int				ft_gnl(const int fd, char **line);
 
 #endif
