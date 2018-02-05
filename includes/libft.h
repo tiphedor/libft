@@ -6,7 +6,7 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/17 18:28:37 by msteffen          #+#    #+#             */
-/*   Updated: 2018/01/17 18:29:06 by msteffen         ###   ########.fr       */
+/*   Updated: 2018/02/05 15:17:31 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ void			ft_memdel(void **ap);
 int				ft_atoi(const char *str);
 char			*ft_itoa(int n);
 
+char			*ft_strreplace(char *haystack, char *needle, char *new_needle);
 char			*ft_strdup(const char *s1);
 char			*ft_strndup(const char *s1, size_t n);
 char			*ft_strnew(size_t size);
