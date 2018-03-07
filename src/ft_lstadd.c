@@ -6,13 +6,13 @@
 /*   By: msteffen <msteffen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/10 15:08:15 by msteffen          #+#    #+#             */
-/*   Updated: 2017/11/10 15:09:31 by msteffen         ###   ########.fr       */
+/*   Updated: 2018/03/07 13:44:21 by msteffen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd(t_list **alst, t_list *new)
+void	ft_lstadd(t_list **alst, t_list *new_node)
 {
 	new->next = *alst;
 	*alst = new;
